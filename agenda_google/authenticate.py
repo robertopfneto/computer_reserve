@@ -8,6 +8,11 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 
+
+
+# Escopos de permissão para a Google Calendar API
+SCOPES = ['https://www.googleapis.com/auth/calendar']
+
 def authenticate_google_calendar():
     """Autentica o Google Calendar e retorna o serviço de acesso"""
     creds = None
